@@ -12,6 +12,8 @@
 		BFB50BC522C75E70009B4EF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB50BC322C75E70009B4EF1 /* Main.storyboard */; };
 		BFB50BC722C75E70009B4EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB50BC622C75E70009B4EF1 /* Assets.xcassets */; };
 		BFB50BCA22C75E70009B4EF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB50BC822C75E70009B4EF1 /* LaunchScreen.storyboard */; };
+		BFD5092A22C767EE0058957C /* JimmyLog-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD5092922C767EE0058957C /* JimmyLog-Extension.swift */; };
+		BFD5092D22C770690058957C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD5092C22C770690058957C /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		BFB50BC622C75E70009B4EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFB50BC922C75E70009B4EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFB50BCB22C75E70009B4EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFD5092922C767EE0058957C /* JimmyLog-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JimmyLog-Extension.swift"; sourceTree = "<group>"; };
+		BFD5092C22C770690058957C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		BFB50BBE22C75E70009B4EF1 /* FlyingSwiftExtension */ = {
 			isa = PBXGroup;
 			children = (
+				BFD5092B22C770130058957C /* Model */,
+				BFD5092722C767B60058957C /* Tools */,
 				BFB50BBF22C75E70009B4EF1 /* AppDelegate.swift */,
 				BFB50BC122C75E70009B4EF1 /* ViewController.swift */,
 				BFB50BC322C75E70009B4EF1 /* Main.storyboard */,
@@ -62,6 +68,30 @@
 				BFB50BCB22C75E70009B4EF1 /* Info.plist */,
 			);
 			path = FlyingSwiftExtension;
+			sourceTree = "<group>";
+		};
+		BFD5092722C767B60058957C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				BFD5092822C767B60058957C /* Category */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		BFD5092822C767B60058957C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BFD5092922C767EE0058957C /* JimmyLog-Extension.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		BFD5092B22C770130058957C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFD5092C22C770690058957C /* Person.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +166,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFB50BC222C75E70009B4EF1 /* ViewController.swift in Sources */,
+				BFD5092A22C767EE0058957C /* JimmyLog-Extension.swift in Sources */,
+				BFD5092D22C770690058957C /* Person.swift in Sources */,
 				BFB50BC022C75E70009B4EF1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
