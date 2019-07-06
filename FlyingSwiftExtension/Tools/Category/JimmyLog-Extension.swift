@@ -24,3 +24,15 @@ func JimmyLog<T>(message: T , file : String = #file, funcName : String = #functi
     #endif
 }
 
+/// 字典 -> 模型
+///
+/// - Parameters:
+///   - type: 类型
+///   - data: 字典数据
+/// - Returns: 模型结果
+/// - Throws: 错误处理
+func JSONModel<T>(_ type: T.Type, withKeyValues data:[String:Any]) throws -> T where T: Decodable {
+    let jsonData = try JSONSerialization.data(withJSONObject: data, options: [])
+    let model = try JSONDecoder().decode(type, from: jsonData)
+    return model
+}

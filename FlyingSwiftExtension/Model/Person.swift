@@ -8,18 +8,23 @@
 
 import Foundation
 
+
 /// Persion模型，遵循 Codable 协议
-class Person: NSObject,Codable,NSCoding {
+class Person: NSObject,Codable  { //删除 nscoding
+    // MARK: - 属性
     var name: String?
     var age: Int?
     var address: String?
+
     
+    // MARK: - 自定义构造函数
     init(name:String,age:Int,address:String){
         self.name = name
         self.age = age
         self.address = address
     }
     
+    // MARK: - 描述修改
     override var description: String {
         return "姓名：\(self.name)，年龄：\(self.age),地址：\(self.address)"
     }
@@ -41,4 +46,6 @@ class Person: NSObject,Codable,NSCoding {
         age = aDecoder.decodeObject(forKey: "age") as? Int
         address = aDecoder.decodeObject(forKey: "address") as? String
     }
+    
+    
 }
